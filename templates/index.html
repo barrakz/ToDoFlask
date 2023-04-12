@@ -5,6 +5,11 @@
     <title>Home ToDo APP</title>
 </head>
 <body>
-<h1>Hello</h1>
+<h1>Todos</h1>
+<ul>
+    {% for todo in todos %}
+        <li>{{ todo['todo'] }}</li>
+    {% endfor %}
+</ul>
 </body>
 </html>
